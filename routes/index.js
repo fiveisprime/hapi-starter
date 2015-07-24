@@ -1,12 +1,12 @@
 module.exports = [
   {
-    method  : 'GET',
-    path    : '/',
-    handler : require('./home')
+    method: 'GET',
+    path: '/',
+    handler: require('./home')
   },
   {
-    method  : 'GET',
-    path    : '/{param*}',
-    handler : require('./static')
+    method: 'GET',
+    path: '/{param*}',
+    handler: require('./static')
   }
-]
+];

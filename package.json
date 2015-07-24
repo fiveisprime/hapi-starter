@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "lab --coverage"
+    "test": "lab --coverage --lint"
   },
   "author": "Matt Hernandez <matt@modulus.io>",
   "license": "MIT",

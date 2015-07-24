@@ -1,17 +1,17 @@
-var Lab    = require('lab')
-var Code   = require('code')
+var Code = require('code');
+var Lab = require('lab');
 
-var lab    = exports.lab = Lab.script()
+var lab = exports.lab = Lab.script();
 
-var server = require('../../')
+var server = require('../../');
 
-lab.suite('home route', function () {
-  lab.test('home route correctly renders html', function (done) {
+lab.describe('home route', function () {
+  lab.it('should correctly render html', function (done) {
     server.inject({ method: 'GET', url: '/' }, function (response) {
-      Code.expect(response.statusCode).to.equal(200)
-      Code.expect(response.headers['content-type']).to.equal('text/html')
+      Code.expect(response.statusCode).to.equal(200);
+      Code.expect(response.headers['content-type']).to.equal('text/html');
 
-      done()
-    })
-  })
-})
+      done();
+    });
+  });
+});
