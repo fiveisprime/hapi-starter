@@ -1,0 +1,20 @@
+{
+  "name": "hapi-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "lab --coverage"
+  },
+  "author": "Matt Hernandez <matt@modulus.io>",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "3.0.3",
+    "hapi": "8.8.0"
+  },
+  "devDependencies": {
+    "code": "1.4.1",
+    "lab": "5.13.0"
+  }
+}
