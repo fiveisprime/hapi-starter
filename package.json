@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node .",
     "test": "lab --coverage --lint",
-    "gen-coverage": "lab --coverage --reporter lcov"
+    "gen-coverage": "lab --coverage --reporter lcov > lcov.info"
   },
   "author": "Matt Hernandez <matt@modulus.io>",
   "license": "MIT",
