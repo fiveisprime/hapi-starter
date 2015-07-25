@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '0.8'
+  - '0.10'
+before_install:
+  - 'npm install npm@1.4.28 -g && npm install codeclimate-test-reporter -g'
+addons:
+  code_climate:
+    repo_token: e9b07c62f6e1117e63e3e5cf7069427b94071ae89f62948a44a2ed6fe9f91275
+after_script:
+  - npm run gen-coverage | codeclimate
