@@ -6,16 +6,18 @@
   "scripts": {
     "start": "node .",
     "test": "lab --coverage --lint",
-    "gen-coverage": "lab --coverage --reporter lcov > lcov.info"
+    "gen-coverage": "lab --coverage --reporter lcov --output coverage/lcov.info"
   },
   "author": "Matt Hernandez <matt@modulus.io>",
   "license": "MIT",
   "dependencies": {
     "handlebars": "3.0.3",
-    "hapi": "8.8.0"
+    "hapi": "9.x.x",
+    "inert": "3.x.x",
+    "vision": "3.x.x"
   },
   "devDependencies": {
-    "code": "1.4.1",
-    "lab": "5.13.0"
+    "code": "1.x.x",
+    "lab": "5.x.x"
   }
 }
