@@ -1,5 +1,5 @@
-var Code = require('code');
-var Lab = require('lab');
+const Code = require('code');
+const Lab = require('lab');
 
 var lab = exports.lab = Lab.script();
 

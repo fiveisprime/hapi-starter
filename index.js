@@ -1,6 +1,6 @@
-var Hapi = require('hapi');
-var Inert = require('inert');
-var Vision = require('vision');
+const Hapi = require('hapi');
+const Inert = require('inert');
+const Vision = require('vision');
 
 var server = module.exports = new Hapi.Server();
 
