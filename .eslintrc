@@ -1,10 +1,7 @@
 {
-  "env": {
-    "node": true
-  },
+  "extends": "modulus",
   "rules": {
-    "indent": [2, 2],
-    "quotes": [2, "single"],
-    "strict": [2, "never"]
+    "no-process-env": 0,
+    "no-console": 0
   }
 }
