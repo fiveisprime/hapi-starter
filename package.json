@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "4.0.0"
+  },
   "scripts": {
     "start": "node .",
     "test": "lab --coverage --lint",
@@ -12,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "3.0.3",
-    "hapi": "9.x.x",
+    "hapi": "10.x.x",
     "inert": "3.x.x",
     "vision": "3.x.x"
   },
