@@ -4,26 +4,27 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "4.0.0"
+    "node": ">=6.0.0"
   },
   "scripts": {
     "start": "node .",
-    "test": "lab --coverage --lint",
+    "test": "lab --coverage",
+    "pretest": "standard",
     "gen-coverage": "lab --coverage --reporter lcov --output coverage/lcov.info"
   },
   "author": "Matt Hernandez <matt@modulus.io>",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "3.0.3",
-    "hapi": "10.x.x",
-    "inert": "3.x.x",
-    "vision": "3.x.x"
+    "handlebars": "4.0.5",
+    "hapi": "14.x.x",
+    "inert": "4.x.x",
+    "vision": "4.x.x"
   },
   "devDependencies": {
-    "code": "1.x.x",
-    "eslint": "1.3.1",
-    "eslint-plugin-hapi": "1.2.0",
-    "eslint-config-modulus": "0.1.0",
-    "lab": "5.x.x"
+    "code": "3.x.x",
+    "lab": "10.x.x",
+    "standard": "7.1.2",
+    "eslint": "3.2.0",
+    "eslint": "2.1.x"
   }
 }

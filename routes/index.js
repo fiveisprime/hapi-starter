@@ -9,4 +9,4 @@ module.exports = [
     path: '/{param*}',
     handler: require('./static')
   }
-];
+]
