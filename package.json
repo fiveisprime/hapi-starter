@@ -7,24 +7,23 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "node .",
+    "start": "node index.js",
     "test": "lab --coverage",
     "pretest": "standard",
     "gen-coverage": "lab --coverage --reporter lcov --output coverage/lcov.info"
   },
-  "author": "Matt Hernandez <matt@modulus.io>",
+  "author": "Matt Hernandez <maherna@microsoft.com>",
   "license": "MIT",
   "dependencies": {
     "handlebars": "4.0.5",
-    "hapi": "14.x.x",
+    "hapi": "16.x.x",
     "inert": "4.x.x",
     "vision": "4.x.x"
   },
   "devDependencies": {
-    "code": "3.x.x",
-    "lab": "10.x.x",
-    "standard": "7.1.2",
-    "eslint": "3.2.0",
-    "eslint": "2.1.x"
+    "code": "4.x.x",
+    "lab": "11.x.x",
+    "standard": "8.6.0",
+    "eslint": "3.2.0"
   }
 }
