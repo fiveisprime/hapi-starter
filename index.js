@@ -5,7 +5,7 @@ const Vision = require('vision')
 let server = module.exports = new Hapi.Server()
 
 server.connection({
-  port: Number(process.env.PORT || 3000)
+  port: process.env.port || 3000
 })
 
 server.register([Vision, Inert], (err) => {
