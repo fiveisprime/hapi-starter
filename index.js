@@ -2,25 +2,24 @@ const Hapi = require('hapi')
 const Inert = require('inert')
 const Vision = require('vision')
 
-let server = module.exports = new Hapi.Server()
+;(async () => {
+  const server = module.exports = Hapi.Server({
+    host: '0.0.0.0',
+    port: process.env.port || process.env.PORT || 3000
+  })
 
-server.connection({
-  port: process.env.port || process.env.PORT || 3000
-})
+  await server.register(Vision)
+  await server.register(Inert)
 
-server.register([Vision, Inert], (err) => {
-  if (err) throw err
-})
+  server.views({
+    engines: { hbs: require('handlebars') },
+    path: require('path').join(__dirname, 'templates'),
+    layout: true
+  })
 
-server.views({
-  engines: { hbs: require('handlebars') },
-  path: require('path').join(__dirname, 'templates'),
-  layout: true
-})
+  server.route(require('./routes'))
 
-server.route(require('./routes'))
+  await server.start()
 
-server.start((err) => {
-  if (err) throw err
   console.log(`Server running at ${server.info.uri}`)
-})
+})()
