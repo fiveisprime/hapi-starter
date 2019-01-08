@@ -1,6 +1,6 @@
 module.exports = (req, h) => {
   return h.view('home', {
-    title: 'Hapi Views',
-    message: 'Hello from the home view'
+    title: 'Home',
+    message: 'Welcome to the home view'
   })
 }
